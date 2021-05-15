@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="7"
+            android:layout_height="wrap_content"
+            android:hint="输入车棚ID"
+            android:id="@+id/cpID"/>
+        <Button
+            android:background="@drawable/b3"
+            android:text="查询"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:onClick="search_cpid"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/showscore_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="18dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#ffffff"
+        android:dividerHeight="6dp"
+        android:fadeScrollbars="true"
+        android:fadingEdge="none"
+        android:paddingTop="10dp"
+
+        android:transcriptMode="alwaysScroll" />
+
+</LinearLayout>

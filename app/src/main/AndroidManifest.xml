@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chargingpile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Chargingpile">
+        <activity android:name=".MainActivity"></activity>
+
+        <activity android:name=".topic_info" />
+        <activity android:name=".cam_info.del_cam" />
+        <activity android:name=".cam_info.add_cam" />
+        <activity android:name=".cam_info.cam_info" />
+        <activity android:name=".MoneyStandard_info.search_money" />
+        <activity android:name=".MoneyStandard_info.del_money" />
+        <activity android:name=".MoneyStandard_info.add_money" />
+        <activity android:name=".MoneyStandard_info.MoneyStandard_info" />
+        <activity android:name=".iccard_info.ic_info" />
+        <activity android:name=".iccard_info.money_ic" />
+        <activity android:name=".iccard_info.band_ic" />
+        <activity android:name=".cdg_info.del_cdg" />
+        <activity android:name=".cdg_info.add_cdg" />
+        <activity android:name=".cdg_info.change_cdg" />
+        <activity android:name=".cdg_info.search_cdg" />
+        <activity android:name=".cdg_info.cdg_info" />
+        <activity android:name=".cp_info.del_cp" />
+        <activity android:name=".cp_info.updata_cp" />
+        <activity android:name=".cp_info.search_cp" />
+        <activity android:name=".cp_info.add_cp" />
+        <activity
+            android:name=".cp_info.cp_info"
+            android:label="@string/title_activity_cp_info"
+            android:theme="@style/Theme.Chargingpile.NoActionBar" />
+        <activity android:name=".login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

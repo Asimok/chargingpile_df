@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:background="@drawable/b3"
+        android:padding="10dp"
+        >
+        <EditText
+            android:id="@+id/bikeShedId"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="车棚ID"/>
+        <EditText
+            android:id="@+id/longitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="经度"/>
+        <EditText
+            android:id="@+id/latitude"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="纬度"/>
+        <EditText
+            android:id="@+id/bikeshedName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="车棚名称"/>
+        <EditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="类型"
+            android:inputType="number"/>
+    </LinearLayout>
+<Button
+    android:textColor="#ffffff"
+    android:textSize="20sp"
+    android:background="@drawable/b3"
+    android:layout_margin="50dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="增加车棚"
+    android:onClick="add"/>
+</LinearLayout>

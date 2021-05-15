@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp"
+        android:background="@drawable/b3"
+        android:padding="10dp"
+        >
+        <EditText
+            android:id="@+id/uuid"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="uuid"/>
+        <EditText
+            android:id="@+id/bikeshedId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="车棚ID"/>
+        <EditText
+            android:id="@+id/cpID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="充电桩组ID"/>
+        <EditText
+            android:id="@+id/no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="充电桩编号"/>
+        <EditText
+            android:id="@+id/grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="组号"
+          />
+    </LinearLayout>
+    <Button
+android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:background="@drawable/b3"
+        android:layout_margin="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="修改充电桩"
+        android:onClick="add"/>
+</LinearLayout>
